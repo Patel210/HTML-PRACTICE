@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        .cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        }
+        .card {
+            flex: 0 0 300px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+        } 
+        .card img {
+            align-items: stretch;
+            align-content: center;
+            max-width: 100%;
+        }
+        .card .text {
+            padding: 0 20px 20px;
+        }
+        .card .text > button {
+            background: gray;
+            border: 0;
+            color: white;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section class="cards">
+        <article class="card">
+            <img src="..\assets\nebula1.gif" alt="Sample Image">
+            <div class="text">
+                <h3>M16: The Eagle Nebula</h3>
+                <p>These towering tendrils of cosmic dust and gas sit at the heart of M16, or the Eagle Nebula. 
+                    The aptly named Pillars of Creation, featured in this stunning Hubble image, are part of an 
+                    active star-forming region within the nebula and hide newborn stars in their wispy columns.</p>
+                <button onclick="location.href='https://www.nasa.gov/feature/goddard/2017/messier-16-the-eagle-nebula'">
+                    Read More</button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="..\assets\hst_hourglass_nebula.gif" alt="Sample Image">
+            <div class="text">
+                <h3>Planetary Nebula, MyCn18</h3>
+                <p>Do you see the hourglass shape -- or does it see you? If you can picture it, the rings of MyCn 18 
+                    trace the outline of an hourglass -- although one with an unusual eye in its center.</p>
+                <button onclick="location.href='https://science.nasa.gov/mycn-18-engraved-hourglass-planetary-nebula'">
+                    Read More</button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="..\assets\hst_lagoon_detail.gif" alt="Sample Image">
+            <div class="text">
+                <h3>M8: The Lagoon Nebula</h3>
+                <p>Commonly known as the Lagoon Nebula, M8 was discovered in 1654 by the Italian astronomer 
+                    Giovanni Battista Hodierna, who, like Charles Messier, sought to catalog nebulous objects in 
+                    the night sky so they would not be mistaken for comets. The best time to observe M8 is during August.</p>
+                <button onclick="location.href='https://www.nasa.gov/feature/goddard/2017/messier-8-the-lagoon-nebula'">
+                    Read More</button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="..\assets\hst_ngc6822_0101.gif" alt="Sample Image">
+            <div class="text">
+                <h3>NGC 6822: Hubble-X</h3>
+                <p>Hubble-X is a glowing gas cloud, one of the most active star-forming regions within galaxy NGC 6822. 
+                    The name Hubble-X does not refer to the shape of the gas cloud, but rather is derived from a catalog 
+                    of objects in this particular galaxy.</p>
+                <button onclick="location.href='https://sci.esa.int/web/hubble/-/25738-hubble-x-in-galaxy-ngc-6822'">
+                    Read More</button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="..\assets\hst_orion_nebula.gif" alt="Sample Image">
+            <div class="text">
+                <h3>M42: The Orion Nebula</h3>
+                <p>Believed to be the cosmic fire of creation by the Maya of Mesoamerica, M42 blazes brightly in 
+                    the constellation Orion. Popularly called the Orion Nebula, this stellar nursery has been 
+                    known to many different cultures throughout human history.</p>
+                <button onclick="location.href='https://www.nasa.gov/feature/goddard/2017/messier-42-the-orion-nebula'">
+                    Read More</button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="..\assets\hst_stingray_nebula.gif" alt="Sample Image">
+            <div class="text">
+                <h3>Hen-1357: The Stingray Nebula</h3>
+                <p>This is the Stingray Nebula (Henize 1357), the youngest known planetary nebula, as seen by 
+                    the NASA/ESA Hubble Space Telescope. Twenty five years ago, the nebulous gas entombing the 
+                    dying star at the centre was not hot enough to glow.</p>
+                <button onclick="location.href='http://www.esa.int/Science_Exploration/Space_Science/Extreme_space/Stingray_Nebula_Henize_1357'">
+                    Read More</button>
+            </div>
+        </article>
+        <article class="card">
+            <img src="..\assets\hst_carina_ngc3372_0006.gif" alt="Sample Image">
+            <div class="text">
+                <h3>NGC 3372: The Carina Nebula</h3>
+                <p>The Carina Nebula, with an overall diameter of more than 200 light-years, is one of the 
+                    outstanding features of the southern-hemisphere part of the Milky Way.</p>
+                <button onclick="location.href='https://www.esa.int/Science_Exploration/Space_Science/Space_sensations/Carina_Nebula_NGC_3372'">
+                    Read More</button>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
