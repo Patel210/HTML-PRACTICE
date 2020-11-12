@@ -21,6 +21,7 @@
         <div>
             <label for="email">email input type: </label>
             <input type="email" id="email" name="email" required>
+            <error-output class="email-error" for="text"></error-output>
         </div>
         <div>
             <label for="url">url input type: </label>
@@ -64,6 +65,16 @@
             }
             else textError.textContent = "Incorrect First Name!";
         });
+
+        const email = document.querySelector('#email');
+        const emailError = document.querySelector('.email-error');
+        email.oninput = function() {
+            let emailRegex = RegExp("^[a-z0-9]+(([\\.+-][a-z0-9]{1,})?)+@[a-z0-9]+\\.([a-z]{2,4})+((\\.[a-z]{2,4})?)$");
+            if (emailRegex.test(email.value)) {
+                emailError.textContent = "";
+            } 
+            else emailError.textContent = "Invalid Email!";
+        }
 
         const salary = document.querySelector('#salary');
         const output = document.querySelector('.salary-output');
